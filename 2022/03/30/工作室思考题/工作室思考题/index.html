@@ -1,0 +1,1403 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="工作室思考题, 奈克瑟斯">
+    <meta name="description" content="1、对数据库有什么了解：数据库是什么？
+数据库就是存放数据的地方。有了数据库，我们才能直接查找数据。数据库可以存放大量数据，允许很多人同时使用里面的数据，就像网盘，可以多人访问里面的数据，但远比网盘存放的数据多。
+数据库是如何储存数据的？
+">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>工作室思考题 | 奈克瑟斯</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">奈克瑟斯</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">奈克瑟斯</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">工作室思考题</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-03-30
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="1、对数据库有什么了解："><a href="#1、对数据库有什么了解：" class="headerlink" title="1、对数据库有什么了解："></a>1、对数据库有什么了解：</h2><p><strong>数据库是什么？</strong></p>
+<p>数据库就是存放数据的地方。有了数据库，我们才能直接查找数据。数据库可以存放大量数据，允许很多人同时使用里面的数据，就像网盘，可以多人访问里面的数据，但远比网盘存放的数据多。</p>
+<p><strong>数据库是如何储存数据的？</strong></p>
+<p>关系数据库就是一张张二维的表组合起来，这些表有一定联系。</p>
+<p>每一张表的结构是这样的：由一个名字标识，包含带有列名的列和记录数据的行。</p>
+<p><img src="https://pic2.zhimg.com/v2-34182ea6a2382ca1eb8efcabcf08cb19_r.jpg" alt="preview"></p>
+<p>表的关系就是数据能够对应的匹配，如果一张表要关联其他表，通过对应的列产生了关系，在关系数据库中这个关系正式名称叫做联结（join）。</p>
+<p><strong>总结：关系数据库 &#x3D; 多张表 + 各表之间的关系。</strong></p>
+<p><strong>什么是关系数据库管理系统？</strong></p>
+<p>（查的）实现数据库原理的“施工团队”就是，用来管理数据库的计算机软件叫做数据库管理系统。<br>常用的关系数据库管理系统有mysql，orcale，sql server。</p>
+<h2 id="2、为什么要有数据库？"><a href="#2、为什么要有数据库？" class="headerlink" title="2、为什么要有数据库？"></a>2、为什么要有数据库？</h2><p>共享：数据库像网盘，可以很多人一起使用里面的数据。</p>
+<p>存储空间大：大数据时代我们需要存放海量数据，数据库可以存放这些数据。</p>
+<p>处理相对复杂问题：数据库可以应对突发事故，such as： 数据丢失、数据被盗。数据库可以处理复杂的业务，如银行存取、淘宝买卖、四六级成绩查询、高考报名等等。</p>
+<p>支持各种复杂的查询逻辑，设计一套通用的查询语法即可。</p>
+<p><img src="https://pic2.zhimg.com/80/v2-26a698eadb61b5efd7c67ed7cd82644b_720w.jpg?source=1940ef5c" alt="img"></p>
+<p>百度百科：SQL (Structured Query Language) 是具有数据操纵和数据定义等多种功能的数据库语言，这种语言具有交互性特点，能为用户提供极大的便利，数据库管理系统应充分利用SQL语言提高计算机应用系统的工作质量与效率。SQL语言不仅能独立应用于终端，还可以作为子语言为其他程序设计提供有效助力，该程序应用中，SQL可与其他程序语言一起优化程序功能，进而为用户提供更多更全面的信息。</p>
+<h2 id="3、数据库与云计算有什么关系？"><a href="#3、数据库与云计算有什么关系？" class="headerlink" title="3、数据库与云计算有什么关系？"></a>3、数据库与云计算有什么关系？</h2><h2 id="4、c语言能面向对象吗？"><a href="#4、c语言能面向对象吗？" class="headerlink" title="4、c语言能面向对象吗？"></a>4、c语言能面向对象吗？</h2><p><strong>不能，但也可以实现面对对象编程</strong>。c语言是面向过程的语言。对象 &#x3D; 属性 + 行为。通常在评价一种语言是否支持面向对象时，首先要看就是这种语言中是否有类的概念，实现面向对象的技术手段主要还是类。那些被公认为面向对象的语言正是凭借类这一技术为面向对象提供了强有力的支持。面向对象强调的是以数据为核心，在程序中复活事物的抽象本质，让它们“智能地”参与问题的求解，而不是传统的以算法或函数过程为核心去解决问题。所以面向对象绝不只是一种技术，更重要的是一种思想，是一种考虑问题和解决问题的思维方式。所以，C语言实现面向对象编程是可能的，只不过比较复杂。</p>
+<h2 id="5、java基本概念"><a href="#5、java基本概念" class="headerlink" title="5、java基本概念"></a>5、java基本概念</h2><h2 id="方法：Java方法是语句的集合，它们在一起执行一个功能。方法其实就是c语言中的函数。"><a href="#方法：Java方法是语句的集合，它们在一起执行一个功能。方法其实就是c语言中的函数。" class="headerlink" title="方法：Java方法是语句的集合，它们在一起执行一个功能。方法其实就是c语言中的函数。"></a><strong>方法：Java方法是语句的集合，它们在一起执行一个功能。方法其实就是c语言中的函数。</strong></h2><ul>
+<li>方法是解决一类问题的步骤的有序组合。</li>
+<li>方法包含于类或对象中。</li>
+<li>方法在程序中被创建，在其他地方被引用。</li>
+</ul>
+<h3 id="方法的优点"><a href="#方法的优点" class="headerlink" title="方法的优点"></a>方法的优点</h3><ul>
+<li><ol>
+<li>使程序变得更简短而清晰。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>有利于程序维护。</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>可以提高程序开发的效率。</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>提高了代码的重用性。</li>
+</ol>
+</li>
+</ul>
+<h3 id="方法的命名规则"><a href="#方法的命名规则" class="headerlink" title="方法的命名规则"></a>方法的命名规则</h3><ul>
+<li>1.方法的名字的第一个单词应以小写字母作为开头，后面的单词则用大写字母开头写，不使用连接符。例如：<strong>addPerson</strong>。</li>
+<li>2.下划线可能出现在 JUnit 测试方法名称中用以分隔名称的逻辑组件。一个典型的模式是：**test<MethodUnderTest>_<state>**，例如 <strong>testPop_emptyStack</strong>。</state></MethodUnderTest></li>
+</ul>
+<p>修饰符 返回值类型 方法名(参数类型 参数名){ </p>
+<p>   …    </p>
+<p>方法体   </p>
+<p> …  </p>
+<p>  return 返回值;</p>
+<p> }</p>
+<p>方法包含一个方法头和一个方法体。</p>
+<p>修饰符：这是可选的，告诉编译器如何调用该方法。定义了该方法的访问类型。</p>
+<p>返回值类型：方法可能会返回值。returnValueType 是方法返回值的数据类型。有些方法执行所需的操作，但没有返回值。在这种情况下，returnValueType 是关键字<strong>void</strong>。</p>
+<p>方法名：是方法的实际名称。方法名和参数表共同构成方法签名。</p>
+<p>参数类型：参数像是一个占位符。当方法被调用时，传递值给参数。这个值被称为实参或变量。参数列表是指方法的参数类型、顺序和参数的个数。参数是可选的，方法可以不包含任何参数。</p>
+<p>方法体：方法体包含具体的语句，定义该方法的功能。</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/D53C92B3-9643-4871-8A72-33D491299653.jpg" alt="img"></p>
+<h2 id="重载：Java-允许同一个类中定义多个同名方法，只要它们的形参列表不同即可。如果同一个类中包含了两个或两个以上方法名相同的方法，但形参列表不同，这种情况被称为方法重载（overload）。"><a href="#重载：Java-允许同一个类中定义多个同名方法，只要它们的形参列表不同即可。如果同一个类中包含了两个或两个以上方法名相同的方法，但形参列表不同，这种情况被称为方法重载（overload）。" class="headerlink" title="重载：Java 允许同一个类中定义多个同名方法，只要它们的形参列表不同即可。如果同一个类中包含了两个或两个以上方法名相同的方法，但形参列表不同，这种情况被称为方法重载（overload）。"></a>重载：<a target="_blank" rel="noopener" href="http://c.biancheng.net/java/">Java</a> 允许同一个类中定义多个同名方法，只要它们的形参列表不同即可。如果同一个类中包含了两个或两个以上方法名相同的方法，但形参列表不同，这种情况被称为方法重载（overload）。</h2><p> 重载（overload）：在同一个类中，由于方法名相同，参数不同，返回值可以相同也可以不同的多个方法，被称为重载。</p>
+<p>example：</p>
+<ol>
+<li><strong>public</strong> void println(int i){…}</li>
+<li><strong>public</strong> void println(double d){…}</li>
+<li><strong>public</strong> void println(String s){…}</li>
+</ol>
+<p>这些方法完成的功能类似，都是格式化输出。根据参数的不同来区分它们，以进行不同的格式化处理和输出。它们之间就构成了方法的重载。实际调用时，根据实参的类型来决定调用哪一个方法。</p>
+<p>方法重载的要求是两同一不同：同一个类中方法名相同，参数列表不同。至于方法的其他部分，如方法返回值类型、修饰符等，与方法重载没有任何关系。</p>
+<p>使用方法重载其实就是避免出现繁多的方法名，有些方法的功能是相似的，如果重新建立一个方法，重新取个方法名称，会降低程序可读性。</p>
+<h2 id="重写（override）：在java中，子类继承了父类的属性和方法，但是当子类修改扩充了方法中的方法时，我们把它称作为重写。"><a href="#重写（override）：在java中，子类继承了父类的属性和方法，但是当子类修改扩充了方法中的方法时，我们把它称作为重写。" class="headerlink" title="重写（override）：在java中，子类继承了父类的属性和方法，但是当子类修改扩充了方法中的方法时，我们把它称作为重写。"></a><strong>重写（override）：</strong>在java中，子类继承了父类的属性和方法，但是当子类修改扩充了方法中的方法时，我们把它称作为重写。</h2><p><strong>即外壳不变，核心重写！</strong></p>
+<p> 重写需要保证返回值和形参都不变；并且重写不能抛出新异常或者比父类更加宽泛的异常。 重写的优势在于子类可以修改父类的实现，来达到相同的方法不同的功能。</p>
+<p>重写的好处在于子类可以根据需要，定义特定于自己的行为。 也就是说子类能够根据需要实现父类的方法。</p>
+<p>重写方法不能抛出新的检查异常或者比被重写方法申明更加宽泛的异常。例如： 父类的一个方法申明了一个检查异常 IOException，但是在重写这个方法的时候不能抛出 Exception 异常，因为 Exception 是 IOException 的父类，抛出 IOException 异常或者 IOException 的子类异常。</p>
+<p>方法重写规则：</p>
+<ul>
+<li>参数列表与被重写方法的参数列表必须完全相同。</li>
+<li>返回类型与被重写方法的返回类型可以不相同，但是必须是父类返回值的派生类（java5 及更早版本返回类型要一样，java7 及更高版本可以不同）。</li>
+<li>访问权限不能比父类中被重写的方法的访问权限更低。例如：如果父类的一个方法被声明为 public，那么在子类中重写该方法就不能声明为 protected。</li>
+<li>父类的成员方法只能被它的子类重写。</li>
+<li>声明为 final 的方法不能被重写。</li>
+<li>声明为 static 的方法不能被重写，但是能够被再次声明。</li>
+<li>子类和父类在同一个包中，那么子类可以重写父类所有方法，除了声明为 private 和 final 的方法。</li>
+<li>子类和父类不在同一个包中，那么子类只能够重写父类的声明为 public 和 protected 的非 final 方法。</li>
+<li>重写的方法能够抛出任何非强制异常，无论被重写的方法是否抛出异常。但是，重写的方法不能抛出新的强制性异常，或者比被重写方法声明的更广泛的强制性异常，反之则可以。</li>
+<li>构造方法不能被重写。</li>
+<li>如果不能继承一个类，则不能重写该类的方法。</li>
+</ul>
+<p>方法的重写(Overriding)和重载(Overloading)是java多态性的不同表现，重写是父类与子类之间多态性的一种表现，重载可以理解成多态的具体表现形式。</p>
+<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><ul>
+<li>(1)方法重载是一个类中定义了多个方法名相同,而他们的参数的数量不同或数量相同而类型和次序不同,则称为方法的重载(Overloading)。</li>
+<li>(2)方法重写是在子类存在方法与父类的方法的名字相同,而且参数的个数与类型一样,返回值也一样的方法,就称为重写(Overriding)。</li>
+<li>(3)方法重载是一个类的多态性表现,而方法重写是子类与父类的一种多态性表现。</li>
+</ul>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/overloading-vs-overriding.png" alt="img"></p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/20171102-1.png" alt="img"></p>
+<h2 id="对象和类：对象是类的一个实例，有状态和行为。类是一个模板，它描述一类对象的行为和状态。"><a href="#对象和类：对象是类的一个实例，有状态和行为。类是一个模板，它描述一类对象的行为和状态。" class="headerlink" title="对象和类：对象是类的一个实例，有状态和行为。类是一个模板，它描述一类对象的行为和状态。"></a>对象和类：对象是类的一个实例，有状态和行为。类是一个模板，它描述一类对象的行为和状态。</h2><p>such as ：汽车为<strong>类（class）</strong>，而具体的每辆车为该汽车类的<strong>对象（object）</strong>，对象包含了汽车的颜色、品牌、名称等。</p>
+<p>对象是根据类创建的。在Java中，使用关键字 new 来创建一个新的对象。创建对象需要以下三步：</p>
+<ul>
+<li><p><strong>声明</strong>：声明一个对象，包括对象名称和对象类型。</p>
+</li>
+<li><p><strong>实例化</strong>：使用关键字 new 来创建一个对象。</p>
+</li>
+<li><p><strong>初始化</strong>：使用 new 创建对象时，会调用构造方法初始化对象。</p>
+<p>每个类都有构造方法。如果没有显式地为类定义构造方法，Java 编译器将会为该类提供一个默认构造方法。</p>
+<p>在创建一个对象的时候，至少要调用一个构造方法。构造方法的名称必须与类同名，一个类可以有多个构造方法。</p>
+</li>
+</ul>
+<p>一个类可以包含以下类型变量：</p>
+<ul>
+<li><strong>局部变量</strong>：在方法、构造方法或者语句块中定义的变量被称为局部变量。变量声明和初始化都是在方法中，方法结束后，变量就会自动销毁。</li>
+<li><strong>成员变量</strong>：成员变量是定义在类中，方法体之外的变量。这种变量在创建对象的时候实例化。成员变量可以被类中方法、构造方法和特定类的语句块访问。</li>
+<li><strong>类变量</strong>：类变量也声明在类中，方法体之外，但必须声明为 static 类型。</li>
+</ul>
+<h2 id="继承：继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为。"><a href="#继承：继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为。" class="headerlink" title="继承：继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为。"></a>继承：继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为。</h2><p>子类会具有父类的一般特性也会具有自身的特性。</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/java-extends-2020-12-08.png" alt="img"></p>
+<h3 id="继承的特性："><a href="#继承的特性：" class="headerlink" title="继承的特性："></a>继承的特性：</h3><ul>
+<li><p>子类拥有父类非 private 的属性、方法。</p>
+</li>
+<li><p>子类可以拥有自己的属性和方法，即子类可以对父类进行扩展。</p>
+</li>
+<li><p>子类可以用自己的方式实现父类的方法。</p>
+</li>
+<li><p>Java 的继承是单继承，但是可以多重继承，单继承就是一个子类只能继承一个父类，多重继承就是，例如 B 类继承 A 类，C 类继承 B 类，所以按照关系就是 B 类是 C 类的父类，A 类是 B 类的父类，这是 Java 继承区别于 C++ 继承的一个特性。</p>
+</li>
+<li><p>提高了类之间的耦合性（继承的缺点，耦合度高就会造成代码之间的联系越紧密，代码独立性越差）。</p>
+<p>继承关键字：继承可以使用 extends 和 implements 这两个关键字来实现继承，而且所有的类都是继承于 java.lang.Object，当一个类没有继承的两个关键字，则默认继承object。</p>
+</li>
+</ul>
+<h2 id="6、Java的特点"><a href="#6、Java的特点" class="headerlink" title="6、Java的特点"></a>6、Java的特点</h2><p>Java语言具有的特点有：<strong>简单性、跨平台性、面向对象、安全性、多线程性、分布性、可移植性、解释型、高性能和动态性</strong>。 Java是一种简单的，面向对象的编程语言。</p>
+<p>　Java编程语言的风格十分接近C++语言。继承了C++语言<strong>面向对象技术</strong>的核心，Java<strong>舍弃了</strong>C++语言中容易引起错误的<strong>指针</strong>，改以<strong>引用</strong>取代，同时移除原C++与原来<strong>运算符重载</strong>，也移除<strong>多重继承</strong>特性，改用<strong>接口</strong>取代，增加<strong>垃圾回收器</strong>功能。在Java SE 1.5版本中引入了<strong>泛型编程、类型安全的枚举、不定长参数和自动装&#x2F;拆箱</strong>特性。太阳微系统对Java语言的解释是：“Java编程语言是个<strong>简单、面向对象、分布式、解释性、健壮、安全与系统无关、可移植、高性能、多线程和动态的语言</strong>”</p>
+<p>　　Java不同于一般的编译语言或直译语言。它首先将<strong>源代码</strong>编译成<strong>字节码</strong>，然后依赖各种不同平台上的<strong>虚拟机</strong>来解释执行字节码，从而实现了“一次编写，到处运行”的跨平台特性。在早期JVM中，这在一定程度上降低了Java程序的运行效率。但在J2SE1.4.2发布后，Java的运行速度有了大幅提升。</p>
+<p>1.简洁有效</p>
+<p>Java语言是一种相当简洁的“面向对象”程序设计语言。Java语言省略了C++语言中所有的难以理解、容易混淆的特性，例如头文件、指针、结构、单元、运算符重载、虚拟基础类等。它更加严谨、简洁。</p>
+<p>注意：</p>
+<p>有些熟悉Visual Basic语言的读者会觉得Java语言相对VB而言更复杂，的确使用Java编程是比使用VB更费力一些。但大家一定要知道VB是一种集成化开发工具，其凭借可视化工具成为开发GUI程序的神器，但其并不能算是一种语言。它的基础是Basic语言，这是一种最简单的语言，但其功能不如C、C++、Java这样完整。</p>
+<p>Java语言采用了特殊的软件构造方法，可以在很小的机器上独立运行。只要40K就可以容下一个最基本的解释器，即使加上基本标准库和线程支持，也仅需再加上175K就够的。这也是Java语言的一个成功秘诀。</p>
+<p>2.高可移植性</p>
+<p>对于一个程序员而言，写出来的程序如果不需修改就能够同时在Windows、MacOS、LINUX等平台上运行，简直就是美梦成真的好事！而Java语言就让这个原本遥不可及的事离我们越来越近。使用Java语言编写的程序，只要做较少的修改，甚至有时根本不需修改就可以在不同平台上运行了，Java绝对是跨平台的一门编程语言。</p>
+<p>举个例子，不同平台上对数据类型的大小有不同的规定。在有的平台上，整型（int）是用一个16位二进制数表示，而有的平台上则是使用一个32位二进制数表示的。C&#x2F;C++语言并没有屏蔽掉这个由不同平台造成的不同。这样如果在一个使用16位二进制数表示整型的平台上开发的C语言源程序，要在一个使用32位二进制数表示整型的平台上运行，简直就是噩耗。</p>
+<p>而在Java语言中，就屏蔽掉了这种由平台造成的不同。Java中的整型数是一定是由32位二进制表示的，Java虚拟机将这个差别消化了。当我们想将一个使用16位二进制数表示整型的平台上开发的Java语言源程序，移植到一个使用32位二进制数表示整型的平台上运行，就不用修改了。</p>
+<p>Java语言具备这种高移植性是一种必然，因为它的设计理念就是“一次编写，到处运行”嘛。</p>
+<p>3.“面向对象”</p>
+<p>可以这么说，“面向对象”是软件工程学的一次革命，大大提升了人类的软件开发能力，是一个伟大的进步，是软件发展的一个重大的理程碑。</p>
+<p>在过去的30年间，“面向对象”有了长足的发展，充分体现了其价值，到现在已经形成了“面向对象的系统分析”、“面向对象的系统设计”、“面向对象的程序设计”一个体系。所以做为一个现代编程语言，是不能够偏离这一方向的，Java语言也不例外。</p>
+<p>注意：</p>
+<p>Java语言被喻为比C++还“面向对象”的程序设计语言，不理解“面向对象”的思想就难以很好地运用Java语言。</p>
+<p>4.解释型</p>
+<p>大家还记得Basic语言吗？当我们使用Basic语言进行编程时，得先进入Basic语言环境，然后输入源程序，再运行它，Basic语言环境一句句地解释、运行，直接得出结果。这种语言就是解释型语言。</p>
+<p>而象C&#x2F;C++这样的语言就不是这样的了，我们先使用编辑软件或集成开发环境（IDE）编写源程序，然后对其进行编译，生成可执行文件。然后我们再通过操作系统执行这个可执行文件得到结果。这种语言就是编译型语言。</p>
+<p>解释型语言效率低，速度慢；编译型语言效率高，速度快。</p>
+<p>Java语言是一种解释型语言。对，没看错，它是一种解释型语言，也就是说，相对于C&#x2F;C++语言来说，Java语言写出来的程序效率低，执行速度慢。但它正是通过在不同平台上运行Java解释器，对Java代码进行解释，来实现“一次编写，到处运行”的宏伟目标的。为了达到目标，牺牲效率还是值得的，再说，现在的计算机技术日新月异，运算速度也越来越快，用户不会感到太慢的。</p>
+<p>一些提示：</p>
+<p>其实Java语言并不是象Basic语言那样完全的解释性，它是一种解释型与编译 型的折中。使用Java语言编写程序，首先用编辑软件或集成开发环境（IDE）编写源程序，然后使用Java编译器进行一次伪编译，将其编译成为中间码（也称字节码）。然后再使用Java解释器进行解释。</p>
+<p>5.适合分布式计算</p>
+<p>Java语言具有强大的、易于使用的连网能力，非常适合开发分布式计算的程序。Java应用程序可以象访问本地文件系统那样通过URL访问远程对象。</p>
+<p>使用Java语言编写Socket通信程序十分简单，使用它比使用任何其它语言都简单。而且它还十分适合于开发公共网关接口（CGI）脚本的开发，另外还可以使用Java小应用程序（Applet）、Java服务器页面（Java Server Page，简称JSP）、Servlet等等手段来构建更丰富的网页。</p>
+<p>6.拥有较好的性能</p>
+<p>正如前面说到，由于Java是一种解释型语言，所以它的执行效率相对就会慢一些，但由于Java语言采用了两种手段，使得其性能还是不错的。</p>
+<p>1） Java语言源程序编写完成后，先使用Java伪编译器进行伪编译，将其转换为中间码（也称为字节码），再解释；</p>
+<p>2） 提供了一种“准实时”（Just-in-Time，JIT）编译器，在需要更快的速度时，可以使用JIT编译器将字节码转换成机器码，然后将其缓冲下来，这样速度就会更快。</p>
+<p>一些提示：</p>
+<p>这种JIT编译器，顾名思义，Just-In-Time，仅在运行时才进行，将其编译成为平台相关的机器码（由于现在已经运行了，无需再考虑可移植性）。这样处理后，可以带来10倍甚至20倍的速度提升。而且这个技术正在不断地得到改正，今后JIT编译器将更加智能，能够监测出哪些代码经常执行，从而对其进行适当的优化，进一步加快执行速度。</p>
+<p>7.健壮、防患于未然</p>
+<p>Java语言在伪编译时，做了许多早期潜在问题的检查，并且在运行时来做了许多相应的检查，可以说是最严格的一种“编译器”。它的这种“防患于未然”的手段将许多程序中的错误扼杀在摇蓝之中。经常有许多在其它语言中必须通过运行才会暴露出来的错误，在编译阶段就被发现了。另外，在Java语言中还提供了许多保证程序稳定、健壮的特性，有效地减少了错误，这样使得Java应用程序更加健壮。</p>
+<p>8.具有多线程处理能力</p>
+<p>线程，是一种轻量级进程，是现代程序设计中必不可少的一种特性。多线程处理能力使得程序能够具有更好的交互性、实时性。Java在多线程处理方面性能超群，具有让你惊喜的强大功能，而且在Java语言中进行多线程处理很简单。</p>
+<p>注意：</p>
+<p>要注意的是，各主流平台在线程的实现上千差万别，所以Java语言也暂时无法在这方面做到“与平台无关”，所以Java为不同的操作系统各实现了一套多线程机制。并且对于程序员来说，不同的机器上，调用多线程机制的代码还是相同的。</p>
+<p>9.具有较高的安全性</p>
+<p>由于Java语言在设计时，在安全性方面考虑很仔细，做了许多探究，使得Java语言成为目前最安全的一种程序设计语言。尽管Sun公司曾经许诺过：“通过Java可以轻松构建出防病毒、防黑客的系统”，但“世界上没有绝对的安全”这一真理是不会因为某人的许诺而失灵验的。就在JDK (Java Development Kit)1.0发布不久后，美国Princeton（普林斯顿）大学的一组安全专家发现了Java 1.0安全特性中的第一例错误。从此，Java安全方面的问题开始被关注。不过至今所发现的安全隐患都很微不足道，而且Java开发组还宣称，他们对系统安全方面的Bugs非常重视，会对这些被发现的进行立即修复。而且由于Sun公司开放了Java解释器的细节，所以有助于通过各界力量，共同发现、防范、制止这些安全隐患。</p>
+<p>10.是一种动态语言</p>
+<p>Java是一种动态的语言，这表示在以下两个方面：</p>
+<p>1） 在Java语言中，可以简单、直观地查询运行时信息；</p>
+<p>2） 可以将新代码加入到一个正在运行的程序中去。</p>
+<p>11.中性的对象语言</p>
+<p>“Java编译器生成的是一种中性的对象文件格式。”也就是说，Java编译器通过伪编译后，将生成一个与任何计算机体系统无关的“中性”的字节码。这种中性结构其实并不是Java首创的，在Java出现之前UCSD Pascal系统就已在一种商业产品中做到这一点，另外在UCSD Pascal之前还有这种方式的先例，那就是Niklaus Wirth实现的Pascal语言中就采用了这种降低一些性能，换取更好的可移植性和通用性的方法。Java的这种字节码经过了许多精心的设计，使得其能够很好地兼容于当今大多数流行的计算机体系统，可以在任何机器上易于解释，易于动态翻译成为机器代码。</p>
+<ol>
+<li>一种面向对象的编程语言。<br>按照对象集合的方式组织程序是一种面向对象的编程思维。<br>面向对象编程的四个主要概念是：抽象化，封装，继承，多态。</li>
+<li>一种与平台无关的语言。(它提供了在不同平台下的解释运行环境)<br>编译器将源代码转换为字节码，然后JVM执行编译器生成的字节码。该字节码可以在Windows，Linux和macOS的任何平台上运行，这意味着如果我们在Windows上编译程序，则可以在Linux上运行，反之亦然。每个操作系统具有不同的JVM，但是在字节码执行后，所有操作系统产生的输出都是相同的。这就是为什么我们称Java为平台无关的语言。</li>
+<li>简单<br>Java是简单的语言之一，因为它不具有指针，运算符重载，多重继承，显式内存分配等复杂功能。</li>
+<li>一种健壮的语言，吸收了C&#x2F;C++语言的优点。<br>Java语言健壮，意味着可靠。它以这样的方式开发：尽力尽早检查错误，这就是Java编译器甚至能够检测到其他编程语言不易检测到的那些错误的原因。使Java健壮的Java主要功能是垃圾收集，异常处理和内存分配。</li>
+<li>具有较高的安全性。(自动回收垃圾，强制类型检查，取消指针)<br>在Java中，我们没有指针，因此我们无法访问越界数组，如果尝试这样做，它将显示ArrayIndexOutOfBoundsException。这就是为什么在Java中无法利用堆栈破坏或缓冲区溢出之类的一些安全漏洞的原因。</li>
+<li>分布式<br>我们可以使用Java编程语言创建分布式应用程序。远程方法调用和企业Java Bean用于在Java中创建分布式应用程序。Java程序可以轻松地分布在通过Internet连接相互连接的一个或多个系统上。</li>
+<li>多线程<br>Java支持多线程。它是Java的一项功能，它允许并发执行程序的两个或更多部分，以最大程度地利用CPU。</li>
+<li>可移植<br>众所周知，在一台机器上编写的Java代码可以在另一台机器上运行。Java的平台无关功能，其中可以将其平台无关字节码带到任何平台上执行，从而使Java可移植。</li>
+<li>开源</li>
+</ol>
+<h2 id="7、java的历史"><a href="#7、java的历史" class="headerlink" title="7、java的历史"></a>7、java的历史</h2><p>Java是世界上使用最广泛的编程语言之一。Java最初由Sun Microsystems在1990年代开发，用于开发从Web应用程序到移动应用程序到批处理应用程序的所有内容。Java最初是一种纯粹的面向对象的语言，但现在已经发展成为一种多范例语言，可以高度适应任何情况。拥有庞大的开发人员社区和支持库，Java是开发几乎所有类型的应用程序的理想选择。</p>
+<p>　任职于太阳微系统的<strong>詹姆斯·高斯林</strong>等人于1990年代初开发Java语言的雏形，最初被命名为<strong>Oak</strong>，目标设置在<strong>家用电器等小型系统的程序语言</strong>，应用在<strong>电视机、电话、闹钟、烤面包机</strong>等家用电器的<strong>控制和通信</strong>。由于这些智能化家电的市场需求没有预期的高，Sun公司放弃了该项计划。随着1990年代互联网的发展，Sun公司看见Oak在互联网上应用的前景，于是改造了Oak，于1995年5月以Java的名称正式发布。Java伴随着互联网的迅猛发展而发展，逐渐成为重要的网络编程语言。</p>
+<p>Java是最初由开发James Gosling(詹姆斯·高斯林，他被称为Java编程语言之父)在Sun Microsystems公司（现已经被Oracle收购），并于1995年发布了作为Sun公司的一个核心组成部分Java平台。</p>
+<p>James Gosling(詹姆斯·高斯林)，Mike Sheridan(迈克·谢里丹)和Patrick Naughton(帕特里克·诺顿)于1991年6月启动了Java语言项目。Java最初是为交互式电视设计的，但在当时的数字有线电视行业来说太先进了。该语言最初是在James Gosling(詹姆斯·高斯林)办公室外的一棵橡树之后被称为Oak的。后来，该项目以<em>Green</em>命名，并最终从Java coffee(印度尼西亚的一种咖啡)重命名为<em>Java</em>。</p>
+<p>　语言最开始只是Sun计算机（Sun MicroSystems）公司在1990年12月开始研究的一个内部项目。Sun计算机公司的一个叫做帕特里克·诺顿的工程师被公司自己开发的C++和Duke，Java语言的吉祥物C语言编译器搞得焦头烂额，因为其中的API极其难用。帕特里克决定改用NeXT，同时他也获得了研究公司的一个叫做<strong>“Stealth计划”</strong>的项目的机会。“Stealth计划”后来改名为“<strong>Green计划</strong>”，詹姆斯·高斯林和麦克·舍林丹也加入了帕特里克的工作小组。他们和其他几个工程师一起在加利福尼亚州门罗帕克市沙丘路的一个小工作室里面研究开发新技术，瞄准下一代智能家电（如微波炉）的程序设计，Sun公司预料未来科技将在家用电器领域大显身手。团队最初考虑使用C++语言，但是很多成员包括Sun的首席科学家比尔·乔伊，发现C++和可用的API在某些方面存在很大问题。</p>
+<p>　　工作小组使用的是嵌入式系统，可以用的资源极其有限。很多成员发现C++太复杂以至很多开发者经常错误使用。他们发现C++缺少垃圾回收系统，还有可移植的安全性、分布程序设计、和多线程功能。最后，他们想要一种易于移植到各种设备上的平台。</p>
+<p>　　根据可用的资金，乔伊决定开发一种集C语言和Mesa语言大成的新语言，在一份报告上，乔伊把它叫做“未来”，他提议Sun公司的工程师应该在C++的基础上，开发一种面向对象的环境。最初，高斯林试图修改和扩展C++的功能，他自己称这种新语言为C++ ++ –，但是后来他放弃了。他将要创造出一种全新的语言，被他命名为“<strong>Oak</strong>”（橡树），以他的<strong>办公室外的橡树</strong>命名。</p>
+<p>　　就像很多开发新技术的秘密工程一样，工作小组没日没夜地工作到了1993年的夏天，他们能够演示新平台的一部分了，包括Green操作系统，Oak的程序设计语言，类库及其硬件。最初的尝试是面向一种类PDA设备，被命名为<strong>Star7</strong>，这种设备有鲜艳的图形界面和被称为“Duke”的智能代理来帮助用户。1992年12月3日，这台设备进行了展示。</p>
+<p>　　同年11月，Green计划被转化成了“<strong>FirstPerson有限公司</strong>”，一个Sun公司的全资子公司，团队也被重新安排到了帕洛阿尔托。FirstPerson团队对建造一种高度交互的设备感兴趣，当时代华纳发布了一个关于电视机顶盒的征求提议书时（Request for proposal），FirstPerson改变了他们的目标，作为对征求意见书的响应，提出了一个机顶盒平台的提议。但是有线电视业界觉得FirstPerson的平台给予用户过多的控制权，因此FirstPerson的投标败给了SGI。与3DO公司的另外一笔关于机顶盒的交易也没有成功，由于他们的平台不能在电视工业产生任何效益，公司被并回Sun公司。</p>
+<p> <strong>Java和互联网</strong></p>
+<p>　　1994年6月，在经历了一场历时三天的脑力激荡的讨论后，约翰·盖吉、詹姆斯·高斯林、比尔·乔伊、帕特里克·诺顿、韦恩·罗斯因和埃里克·斯库米，团队决定再一次改变努力的目标，这次他们决定将该技术应用于万维网。他们认为随着Mosaic浏览器的到来，因特网正在向同样的高度互动的远景演变，而这一远景正是他们在有线电视网中看到的。作为原型，帕特里克·诺顿写了一个小型万维网浏览器，WebRunner，后来改名为HotJava。</p>
+<p>　　1994年10月，HotJava和Java平台为公司高层进行演示。1994年，Java 1.0a版本已经可以提供下载，但是Java和HotJava浏览器的第一次公开发布却是在1995年3月23日SunWorld大会上进行的。升阳公司的科学指导约翰·盖吉宣告Java技术。这个发布是与网景公司的执行副总裁马克·安德森的惊人发布一起进行的，宣布网景将在其浏览器中包含对Java的支持。1996年1月，升阳公司成立了Java业务集团，专门开发Java技术。</p>
+<p> <strong>Java和“Java”</strong></p>
+<p>　　由于商标搜索显示，Oak已被一家<strong>显示卡制造商</strong>注册。于是同年，Oak被改名为<strong>Java</strong>。当使用<strong>十六进制编辑器</strong>打开由Java源代码编译出的<strong>二进制文件（.class文件）</strong>的话，最前面的32位将显示为CA FE BA BE，即词组“CAFE BABE”（<strong>咖啡屋宝贝</strong>）。</p>
+<p>Java的创始人：James Gosling(詹姆斯·高斯林)</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">白漠高</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2022/03/30/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E6%80%9D%E8%80%83%E9%A2%98/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E6%80%9D%E8%80%83%E9%A2%98/">http://example.com/2022/03/30/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E6%80%9D%E8%80%83%E9%A2%98/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E6%80%9D%E8%80%83%E9%A2%98/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">白漠高</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/03/30/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E6%80%9D%E8%80%83%E9%A2%98/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E6%80%9D%E8%80%83%E9%A2%98/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="工作室思考题">
+                        
+                        <span class="card-title">工作室思考题</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-30
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            白漠高
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/22/java%E5%AD%A6%E4%B9%A0/java%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E5%92%8C%E4%B9%9D%E4%B9%9D%E4%B9%98%E6%B3%95%E8%A1%A8/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="java小编程">
+                        
+                        <span class="card-title">java小编程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            白漠高
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022</span>
+            
+            <a href="/about" target="_blank">白漠高</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2022";
+                        var startMonth = "3";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+    <a href="mailto:1902984927@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1902984927" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1902984927" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
